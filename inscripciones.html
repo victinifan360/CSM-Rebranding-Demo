@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colegio San Miguel - Inscripciones</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="IMG/Marca.svg" alt="Colegio San Miguel" height="50">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="proyecto-educativo.html">Proyecto Educativo</a></li>
+                    <li class="nav-item"><a class="nav-link" href="niveles.html">Niveles</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="inscripciones.html">Inscripciones</a></li>
+                    <li class="nav-item"><a class="nav-link" href="pastoral.html">Pastoral</a></li>
+                    <li class="nav-item"><a class="nav-link" href="novedades.html">Novedades</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container mt-5">
+        <h1 class="mb-4">Ingreso alumno/a nuevo/a</h1>
+        <p>Las familias interesadas en formar parte de la Comunidad Educativa del Colegio San Miguel realizarán un proceso de admisión. Concebimos el proceso de admisión como un camino que ofrece la oportunidad a las familias y al Colegio, de ejercitar los procesos de discernimiento, recorriendo un trayecto que nos permita conocer con mayor profundidad, las propuestas de cada uno.</p>
+        <p>Las vacantes disponibles se completarán en el siguiente orden de prelación: hermanos y hermanas de alumnos/as, familiares de alumnos/as, hijos e hijas de exalumnos/as, alumnos/as nuevos.</p>
+
+        <!-- Accordion -->
+        <div class="accordion" id="admissionAccordion">
+            <!-- Nivel Inicial -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingInitial">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseInitial" aria-expanded="true" aria-controls="collapseInitial">
+                        Nivel Inicial
+                    </button>
+                </h2>
+                <div id="collapseInitial" class="accordion-collapse collapse show" aria-labelledby="headingInitial" data-bs-parent="#admissionAccordion">
+                    <div class="accordion-body">
+                        <h3>Ingreso Nivel Inicial</h3>
+                        <p>Proceso de admisión:</p>
+                        <ol>
+                            <li>Completar el formulario de solicitud de vacante vía web. (Las vacantes disponibles se completarán en el siguiente orden de prelación: hermanos de alumnos, familiares de alumnos, hijos/as de ex alumnos, alumnos nuevos)</li>
+                            <li>Participar de una reunión informativa, para conocer la propuesta pedagógica y organizativa propia del nivel (se les enviará por mail la fecha para convocarlos a la misma).</li>
+                            <li>Abonar una reserva de vacante (será a cuenta del pago total de la matrícula) *</li>
+                            <li>La familia deberá participar de una entrevista con el equipo directivo y/o de orientación, la cual nos permitirá conocer al niño/a que inicia este proceso, por lo que será fundamental que puedan comentar cualquier situación particular, ya sea de índole familiar, de salud o terapéutica.</li>
+                            <li>Tendremos luego una instancia de encuentro con los niños/as aspirante al ingreso, con la intención de conocernos y de compartir un momento de juego en pequeños grupos.</li>
+                            <li>Recibirán la respuesta de confirmación o no a la solicitud de vacante.</li>
+                            <li>El ingreso y la matriculación serán efectivos habiendo presentado la documentación requerida y abonado la matrícula correspondiente, al término de 10 días de la fecha de la confirmación.</li>
+                        </ol>
+                        <p>* En caso que al finalizar el proceso de admisión, la respuesta a la solicitud de ingreso sea de aceptación deberán adherir al Proyecto educativo y reglamentos institucionales del Colegio San Miguel y finalizar el pago de la matrícula. En el caso que la respuesta de la institución no sea favorable, se reintegrará el importe abonado al inicio del proceso. En cambio si en esta etapa es la familia quien decide no finalizar el proceso no se efectuará dicho reintegro.</p>
+                        <p>** Se considerará el valor de la matrícula 2024 y en el mes de septiembre abonarán la diferencia en relación a la del 2024.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Nivel Primario -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingPrimary">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsePrimary" aria-expanded="false" aria-controls="collapsePrimary">
+                        Nivel Primario
+                    </button>
+                </h2>
+                <div id="collapsePrimary" class="accordion-collapse collapse" aria-labelledby="headingPrimary" data-bs-parent="#admissionAccordion">
+                    <div class="accordion-body">
+                        <h3>Ingreso Nivel Primario</h3>
+                        <p>Proceso de admisión:</p>
+                        <ol>
+                            <li>Completar el formulario de preinscripción vía web.</li>
+                            <li>Participar de una reunión informativa para conocer la propuesta pedagógica y organizativa propia del nivel (se les enviará por mail la fecha para convocarlos a la misma).</li>
+                            <li>Abonar una reserva de vacante (será a cuenta del pago total de la matrícula) *</li>
+                            <li>La familia deberá participar de una entrevista con el equipo directivo y/o de orientación, la cual nos permitirá conocer al niño o niña que inicia este proceso, por lo que será fundamental que puedan comentar cualquier situación particular, ya sea de índole familiar, de salud o terapéutica.</li>
+                            <li>Habrá luego, una instancia de encuentro con los niños y las niñas aspirantes al ingreso, con la intención de conocernos y de compartir un momento de trabajo.</li>
+                            <li>Recibirán la respuesta de confirmación o no a la solicitud de vacante.</li>
+                            <li>Una vez confirmada la solicitud de vacante, deberán en el plazo de diez días, abonar la totalidad de la matrícula.</li>
+                            <li>El ingreso y la matriculación serán efectivas habiendo presentado toda la documentación requerida y abonado la matrícula.</li>
+                        </ol>
+                        <p>* En caso que al finalizar el proceso de admisión, la respuesta a la solicitud de ingreso sea de aceptación deberán adherir al Proyecto educativo y reglamentos institucionales del Colegio San Miguel y finalizar el pago de la matrícula. En el caso que la respuesta de la institución no sea favorable, se reintegrará el importe abonado al inicio del proceso. En cambio si en esta etapa es la familia quien decide no finalizar el proceso no se efectuará dicho reintegro.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Nivel Secundario -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingSecondary">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSecondary" aria-expanded="false" aria-controls="collapseSecondary">
+                        Nivel Secundario
+                    </button>
+                </h2>
+                <div id="collapseSecondary" class="accordion-collapse collapse" aria-labelledby="headingSecondary" data-bs-parent="#admissionAccordion">
+                    <div class="accordion-body">
+                        <h3>Ingreso Nivel Secundario</h3>
+                        <p>Proceso de admisión:</p>
+                        <ol>
+                            <li>Completar el formulario de solicitud de vacante vía web. (Las vacantes disponibles se completarán en el siguiente orden de prelación: hermanos de alumnos, familiares de alumnos, hijos/as de ex alumnos, alumnos nuevos)</li>
+                            <li>Participar de una reunión informativa, para conocer la propuesta pedagógica y organizativa propia del nivel (se les enviará por mail la fecha para convocarlos a la misma).</li>
+                            <li>Abonar una reserva de vacante (será a cuenta del pago total de la matrícula) *</li>
+                            <li>La familia deberá participar de una entrevista con el equipo directivo y/o de orientación, la cual nos permitirá conocer al niño/a que inicia este proceso, por lo que será fundamental que puedan comentar cualquier situación particular, ya sea de índole familiar, de salud o terapéutica.</li>
+                            <li>Tendremos luego una instancia de encuentro con los niños/as aspirante al ingreso, con la intención de conocernos y de compartir un momento de juego en pequeños grupos.</li>
+                            <li>Recibirán la respuesta de confirmación o no a la solicitud de vacante.</li>
+                            <li>El ingreso y la matriculación serán efectivos habiendo presentado la documentación requerida y abonado la matrícula correspondiente, al término de 10 días de la fecha de la confirmación.</li>
+                        </ol>
+                        <p>* En caso que al finalizar el proceso de admisión, la respuesta a la solicitud de ingreso sea de aceptación deberán adherir al Proyecto educativo y reglamentos institucionales del Colegio San Miguel y finalizar el pago de la matrícula. En el caso que la respuesta de la institución no sea favorable, se reintegrará el importe abonado al inicio del proceso. En cambio si en esta etapa es la familia quien decide no finalizar el proceso no se efectuará dicho reintegro.</p>
+                        <p>** Se considerará el valor de la matrícula 2024 y en el mes de septiembre abonarán la diferencia en relación a la del 2024.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer bg-dark text-white text-center py-4 mt-5">
+        <div class="container">
+            <p class="mb-0">&copy; 2024 Colegio San Miguel. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
