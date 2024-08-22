@@ -1,44 +1,54 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f8f9fa;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0f2f5;
     color: #333;
+    line-height: 1.6;
 }
 
-.hero {
-    background-image: url('img/Niños-1.webp');
-    background-size: cover;
-    background-position: center;
-    position: relative;
+.navbar {
+    background-color: #002366;
 }
 
-.hero::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 139, 0.7); /* Azul marino con opacidad */
+.navbar .nav-link {
+    color: #fff !important;
 }
 
-.hero .container {
-    position: relative;
-    z-index: 2;
+.navbar .nav-link.active {
+    font-weight: 600;
+    text-decoration: underline;
 }
 
-.hero h1 {
-    font-size: 3rem;
+.card {
+    border: none;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-title {
+    color: #002366;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.card-text {
+    font-size: 0.95rem;
+}
+
+h2 {
+    color: #002366;
     font-weight: 700;
+    text-transform: uppercase;
 }
 
-.about img, .toddlers img {
-    max-height: 300px;
-    object-fit: cover;
-}
-
-.cta {
-    background-color: #333;
-    padding: 50px 0;
+.list-group-item {
+    background-color: transparent;
+    border: none;
+    padding-left: 0;
+    font-size: 1rem;
 }
 
 .footer {
@@ -47,4 +57,19 @@ body {
 
 .footer p {
     margin-bottom: 0;
+    font-size: 0.9rem;
 }
+
+.container ul {
+    padding-left: 20px;
+}
+
+.container ul li {
+    margin-bottom: 10px;
+}
+
+.lead {
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
