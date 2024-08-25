@@ -7,9 +7,11 @@
     <link rel="icon" href="IMG/favicon.ico" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="IMG/favicon.ico" type="image/x-icon">
     <!-- FontAwesome -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <!-- FancyApps Carousel -->
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/carousel/carousel.umd.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/carousel/carousel.css" />
 </head>
 <body>
 <!-- Navbar -->
@@ -37,6 +39,25 @@
     <div class="container">
         <h1 class="display-4">Colegio San Miguel</h1>
         <p class="lead">Compromiso con la educación desde 1913</p>
+    </div>
+</section>
+
+<!-- Carrusel de Imágenes -->
+<section class="carousel py-5">
+    <div class="container">
+        <h2 class="text-center mb-4">Bienvenida</h2>
+        <div class="row">
+            <div class="col-12">
+                <div class="f-carousel" id="myCarousel">
+                    <div class="f-carousel__slide">
+                        <img src="IMG/Bienvenida-1.svg" alt="Bienvenida 1" class="img-fluid rounded">
+                    </div>
+                    <div class="f-carousel__slide">
+                        <img src="IMG/Bienvenida-2.svg" alt="Bienvenida 2" class="img-fluid rounded">
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </section>
 
@@ -87,7 +108,8 @@
                 <img src="IMG/Toddlers-1.webp" alt="Niños pequeños" class="img-fluid rounded">
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
 <!-- Escuelas Hermanas Section -->
 <section class="sister-schools py-5">
@@ -101,7 +123,8 @@
                 <img src="IMG/Teen-with-child.webp" alt="Joven con niño" class="img-fluid rounded">
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
 <!-- Información Section -->
 <section class="informacion py-5">
@@ -138,10 +161,25 @@
     </div>
 </footer>
 
-
-
+<!-- Scripts -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+    const container = document.getElementById("myCarousel");
+    const options = { infinite: true };
+    new Carousel(container, options);
+</script>
+<script>
+const options = {
+infinite: true,
+Autoplay: {
+    timeout: 3000, // 3 seconds
+},
+};
+new Carousel(container, options);
+
+</script>
 </body>
 </html>
+
 
 
