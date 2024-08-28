@@ -1,43 +1,83 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Colegio San Miguel</title>
+    <title>Ingreso de Alumnos - Colegio San Miguel</title>
     <link rel="icon" href="IMG/favicon.ico" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="IMG/favicon.ico" type="image/x-icon">
     <!-- FontAwesome -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+        }
+        .navbar {
+            background-color: #f8f9fa;
+        }
+        .navbar-brand img {
+            height: 50px;
+        }
+        .accordion-button {
+            font-size: 1.1rem;
+        }
+        .accordion-body h3, .accordion-body h4 {
+            color: #343a40;
+        }
+        .btn-primary {
+            background-color: #007bff;
+            border-color: #007bff;
+        }
+        .btn-primary:hover {
+            background-color: #0056b3;
+            border-color: #004085;
+        }
+        footer {
+            background-color: #343a40;
+            color: #fff;
+        }
+        .social-icons a {
+            font-size: 1.5rem;
+            transition: color 0.3s;
+        }
+        .social-icons a:hover {
+            color: #007bff;
+        }
+        .btn-primary i {
+            margin-right: 0.5rem;
+        }
+    </style>
 </head>
-<body>
-<!-- Navbar -->
-<nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
-    <div class="container">
-        <a class="navbar-brand" href="index.html">
-            <img src="IMG/Marca.svg" alt="Colegio San Miguel" height="50">
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-                <li class="nav-item"><a class="nav-link" href="niveles.html">Niveles</a></li>
-                <li class="nav-item"><a class="nav-link" href="inscripciones.html">Inscripciones</a></li>
-                <li class="nav-item"><a class="nav-link" href="pastoral.html">Pastoral</a></li>
-                <li class="nav-item"><a class="nav-link" href="novedades.html">Novedades</a></li>                
-            </ul>
-        </div>
-    </div>
-</nav>
 
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="IMG/Marca.svg" alt="Colegio San Miguel">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="niveles.html">Niveles</a></li>
+                    <li class="nav-item"><a class="nav-link" href="inscripciones.html">Inscripciones</a></li>
+                    <li class="nav-item"><a class="nav-link" href="pastoral.html">Pastoral</a></li>
+                    <li class="nav-item"><a class="nav-link" href="novedades.html">Novedades</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
     <!-- Main Content -->
     <div class="container mt-5">
-        <h1 class="mb-4">Ingreso alumno/a nuevo/a</h1>
-        <p>Las familias interesadas en formar parte de la Comunidad Educativa del Colegio San Miguel realizarán un proceso de admisión. Concebimos el proceso de admisión como un camino que ofrece la oportunidad a las familias y al Colegio, de ejercitar los procesos de discernimiento, recorriendo un trayecto que nos permita conocer con mayor profundidad, las propuestas de cada uno.</p>
-        <p>Las vacantes disponibles se completarán en el siguiente orden de prelación: hermanos y hermanas de alumnos/as, familiares de alumnos/as, hijos e hijas de exalumnos/as, alumnos/as nuevos.</p>
+        <h1 class="mb-4">Ingreso de Alumno/a Nuevo/a</h1>
+        <p>Las familias interesadas en formar parte de la Comunidad Educativa del Colegio San Miguel deberán realizar un proceso de admisión. Este proceso ofrece la oportunidad de conocer más a fondo las propuestas del Colegio y permitir a las familias y al Colegio ejercer un discernimiento mutuo.</p>
+        <p>Las vacantes disponibles se completarán en el siguiente orden de prelación: hermanos/as de alumnos/as, familiares de alumnos/as, hijos/as de exalumnos/as y, finalmente, alumnos/as nuevos.</p>
 
         <!-- Accordion -->
         <div class="accordion" id="admissionAccordion">
@@ -53,23 +93,23 @@
                         <h3>Ingreso Nivel Inicial</h3>
                         <p>Proceso de admisión:</p>
                         <ol>
-                            <li>Completar el formulario de solicitud de vacante vía web. (Las vacantes disponibles se completarán en el siguiente orden de prelación: hermanos de alumnos, familiares de alumnos, hijos/as de ex alumnos, alumnos nuevos)</li>
-                            <li>Participar de una reunión informativa, para conocer la propuesta pedagógica y organizativa propia del nivel (se les enviará por mail la fecha para convocarlos a la misma).</li>
-                            <li>Abonar una reserva de vacante (será a cuenta del pago total de la matrícula) *</li>
-                            <li>La familia deberá participar de una entrevista con el equipo directivo y/o de orientación, la cual nos permitirá conocer al niño/a que inicia este proceso, por lo que será fundamental que puedan comentar cualquier situación particular, ya sea de índole familiar, de salud o terapéutica.</li>
-                            <li>Tendremos luego una instancia de encuentro con los niños/as aspirante al ingreso, con la intención de conocernos y de compartir un momento de juego en pequeños grupos.</li>
-                            <li>Recibirán la respuesta de confirmación o no a la solicitud de vacante.</li>
-                            <li>El ingreso y la matriculación serán efectivos habiendo presentado la documentación requerida y abonado la matrícula correspondiente, al término de 10 días de la fecha de la confirmación.</li>
+                            <li>Completar el formulario de solicitud de vacante en línea. (Las vacantes se asignan según el orden de prelación mencionado anteriormente.)</li>
+                            <li>Participar en una reunión informativa para conocer la propuesta pedagógica y organizativa del nivel (la fecha será enviada por correo electrónico).</li>
+                            <li>Abonar una reserva de vacante (se descontará del pago total de la matrícula) *</li>
+                            <li>La familia deberá participar en una entrevista con el equipo directivo y/o de orientación para compartir información relevante sobre el niño/a.</li>
+                            <li>Habrá una instancia de encuentro con los niños/as aspirantes para conocerse y compartir un momento de juego.</li>
+                            <li>Recibirán la confirmación o rechazo de la solicitud de vacante.</li>
+                            <li>El ingreso y la matriculación se formalizarán tras la presentación de la documentación requerida y el pago completo de la matrícula, dentro de los 10 días posteriores a la confirmación.</li>
                         </ol>
-                        <p>* En caso que al finalizar el proceso de admisión, la respuesta a la solicitud de ingreso sea de aceptación deberán adherir al Proyecto educativo y reglamentos institucionales del Colegio San Miguel y finalizar el pago de la matrícula. En el caso que la respuesta de la institución no sea favorable, se reintegrará el importe abonado al inicio del proceso. En cambio si en esta etapa es la familia quien decide no finalizar el proceso no se efectuará dicho reintegro.</p>
-                        <p>** Se considerará el valor de la matrícula 2024 y en el mes de septiembre abonarán la diferencia en relación a la del 2024.</p>
+                        <p>* En caso de aceptación, deberán adherir al Proyecto educativo y reglamentos institucionales del Colegio San Miguel y completar el pago de la matrícula. Si la respuesta es negativa, se reintegrará el importe abonado al inicio. Si la familia decide no continuar con el proceso, no se efectuará el reintegro.</p>
+                        <p>** La matrícula será la correspondiente al año 2024, y en septiembre deberán abonar la diferencia en relación a la del año 2024.</p>
                         <hr>
-                        <h4>Formularios de solicitud:</h4>
+                        <h4>Formularios de Solicitud:</h4>
                         <div class="d-grid gap-2">
-                            <a href="https://docs.google.com/forms/d/e/1FAIpQLSfZAug1l8QhjC4SBVZOTNT5ElzPLZkrfVJjHGDF_NUHxYbtOQ/viewform" class="btn btn-primary" target="_blank"><i class="fas fa-external-link-alt"></i> Sala de dos</a>
-                            <a href="https://docs.google.com/forms/d/e/1FAIpQLSe5QYLo240RCrk1U8F1Ym3jb1jpYua5EfzNgIkpUFohasSADA/viewform" class="btn btn-primary" target="_blank"><i class="fas fa-external-link-alt"></i> Sala de tres</a>
-                            <a href="https://docs.google.com/forms/d/e/1FAIpQLSeRuB230R46ruHBcnSUoN7RL1Ta4oyzHmeihbLYapKT4riCWw/viewform" class="btn btn-primary" target="_blank"><i class="fas fa-external-link-alt"></i> Sala de cuatro</a>
-                            <a href="https://docs.google.com/forms/d/e/1FAIpQLScDFTzOr7wY75mPxgHgUZzPmHJQQoIKJXgwd_F96i6ueVzBNA/viewform" class="btn btn-primary" target="_blank"><i class="fas fa-external-link-alt"></i> Sala de cinco</a>
+                            <a href="https://docs.google.com/forms/d/e/1FAIpQLSfZAug1l8QhjC4SBVZOTNT5ElzPLZkrfVJjHGDF_NUHxYbtOQ/viewform" class="btn btn-primary" target="_blank"><i class="fas fa-external-link-alt"></i> Sala de Dos</a>
+                            <a href="https://docs.google.com/forms/d/e/1FAIpQLSe5QYLo240RCrk1U8F1Ym3jb1jpYua5EfzNgIkpUFohasSADA/viewform" class="btn btn-primary" target="_blank"><i class="fas fa-external-link-alt"></i> Sala de Tres</a>
+                            <a href="https://docs.google.com/forms/d/e/1FAIpQLSeRuB230R46ruHBcnSUoN7RL1Ta4oyzHmeihbLYapKT4riCWw/viewform" class="btn btn-primary" target="_blank"><i class="fas fa-external-link-alt"></i> Sala de Cuatro</a>
+                            <a href="https://docs.google.com/forms/d/e/1FAIpQLScDFTzOr7wY75mPxgHgUZzPmHJQQoIKJXgwd_F96i6ueVzBNA/viewform" class="btn btn-primary" target="_blank"><i class="fas fa-external-link-alt"></i> Sala de Cinco</a>
                         </div>
                     </div>
                 </div>
@@ -86,27 +126,25 @@
                         <h3>Ingreso Nivel Primario</h3>
                         <p>Proceso de admisión:</p>
                         <ol>
-                            <li>Completar el formulario de preinscripción vía web.</li>
-                            <li>Participar de una reunión informativa para conocer la propuesta pedagógica y organizativa propia del nivel (se les enviará por mail la fecha para convocarlos a la misma).</li>
-                            <li>Abonar una reserva de vacante (será a cuenta del pago total de la matrícula) *</li>
-                            <li>La familia deberá participar de una entrevista con el equipo directivo y/o de orientación, la cual nos permitirá conocer al niño o niña que inicia este proceso, por lo que será fundamental que puedan comentar cualquier situación particular, ya sea de índole familiar, de salud o terapéutica.</li>
-                            <li>Habrá luego, una instancia de encuentro con los niños y las niñas aspirantes al ingreso, con la intención de conocernos y de compartir un momento de trabajo.</li>
-                            <li>Recibirán la respuesta de confirmación o no a la solicitud de vacante.</li>
-                            <li>Una vez confirmada la solicitud de vacante, deberán en el plazo de diez días, abonar la totalidad de la matrícula.</li>
-                            <li>El ingreso y la matriculación serán efectivas habiendo presentado toda la documentación requerida y abonado la matrícula.</li>
+                            <li>Completar el formulario de preinscripción en línea.</li>
+                            <li>Participar en una reunión informativa para conocer la propuesta pedagógica y organizativa del nivel (la fecha será enviada por correo electrónico).</li>
+                            <li>Abonar una reserva de vacante (se descontará del pago total de la matrícula) *</li>
+                            <li>La familia deberá participar en una entrevista con el equipo directivo y/o de orientación para compartir información relevante sobre el niño/a.</li>
+                            <li>Habrá una instancia de encuentro con los niños/as aspirantes para conocerse y compartir un momento de trabajo.</li>
+                            <li>Recibirán la confirmación o rechazo de la solicitud de vacante.</li>
+                            <li>Una vez confirmada la solicitud, deberán abonar la totalidad de la matrícula dentro de los 10 días.</li>
                         </ol>
-                        <p>* En caso que al finalizar el proceso de admisión, la respuesta a la solicitud de ingreso sea de aceptación deberán adherir al Proyecto educativo y reglamentos institucionales del Colegio San Miguel y finalizar el pago de la matrícula. En el caso que la respuesta de la institución no sea favorable, se reintegrará el importe abonado al inicio del proceso. En cambio si en esta etapa es la familia quien decide no finalizar el proceso no se efectuará dicho reintegro.</p>
-                        <p>** Se considerará el valor de la matrícula 2024 y en el mes de septiembre abonarán la diferencia en relación a la del 2024.</p>
+                        <p>* En caso de aceptación, deberán adherir al Proyecto educativo y reglamentos institucionales del Colegio San Miguel y completar el pago de la matrícula. Si la respuesta es negativa, se reintegrará el importe abonado al inicio. Si la familia decide no continuar con el proceso, no se efectuará el reintegro.</p>
+                        <p>** La matrícula será la correspondiente al año 2024, y en septiembre deberán abonar la diferencia en relación a la del año 2024.</p>
                         <hr>
-                        <h4>Formulario de preinscripción:</h4>
+                        <h4>Formulario de Preinscripción:</h4>
                         <div class="d-grid gap-2">
-                            <a href="https://docs.google.com/forms/d/e/1FAIpQLSehIXM3k_tflR0USQjLVTZWLKAZqD_q_kvkneIOrdWCKOP01g/viewform" class="btn btn-primary" target="_blank"><i class="fas fa-external-link-alt"></i> Primer grado</a>
-                            <a href="https://docs.google.com/forms/d/e/1FAIpQLScdjyENQtJxHqHthhSo77AqtQIrkk8XXTh-YgGZlxCv4gbz_w/viewform" class="btn btn-primary" target="_blank"><i class="fas fa-external-link-alt"></i> Segundo grado</a>
-                            <a href="https://docs.google.com/forms/d/e/1FAIpQLScBCmK6Of5zWxs7BLaIsZz_s1vTtkwQ1erjx_5S7iDDFubxLQ/viewform" class="btn btn-primary" target="_blank"><i class="fas fa-external-link-alt"></i> Cuarto grado</a>
-                            <a href="https://docs.google.com/forms/d/e/1FAIpQLSfDyIvQ8lncPQdQnNhMDNRNbLulF8PRYFwL9-roNOgUJbvElg/viewform" class="btn btn-primary" target="_blank"><i class="fas fa-external-link-alt"></i> Quinto grado</a>
-                            <a href="https://docs.google.com/forms/d/e/1FAIpQLSeD4ZhSEISeaygdkiQvmNK58sUqWyw1hgOqZQtf-M5ZiAAzdA/viewform" class="btn btn-primary" target="_blank"><i class="fas fa-external-link-alt"></i> Sexto grado</a>
-                            <a href="https://docs.google.com/forms/d/e/1FAIpQLSdMybiiXgzbCl2Ol66HafbFqZynfZKDlAhwhsygO2YNJKPSfA/viewform" class="btn btn-primary" target="_blank"><i class="fas fa-external-link-alt"></i> Septimo grado</a>
-
+                            <a href="https://docs.google.com/forms/d/e/1FAIpQLSehIXM3k_tflR0USQjLVTZWLKAZqD_q_kvkneIOrdWCKOP01g/viewform" class="btn btn-primary" target="_blank"><i class="fas fa-external-link-alt"></i> Primer Grado</a>
+                            <a href="https://docs.google.com/forms/d/e/1FAIpQLScdjyENQtJxHqHthhSo77AqtQIrkk8XXTh-YgGZlxCv4gbz_w/viewform" class="btn btn-primary" target="_blank"><i class="fas fa-external-link-alt"></i> Segundo Grado</a>
+                            <a href="https://docs.google.com/forms/d/e/1FAIpQLScBCmK6Of5zWxs7BLaIsZz_s1vTtkwQ1erjx_5S7iDDFubxLQ/viewform" class="btn btn-primary" target="_blank"><i class="fas fa-external-link-alt"></i> Cuarto Grado</a>
+                            <a href="https://docs.google.com/forms/d/e/1FAIpQLSfDyIvQ8lncPQdQnNhMDNRNbLulF8PRYFwL9-roNOgUJbvElg/viewform" class="btn btn-primary" target="_blank"><i class="fas fa-external-link-alt"></i> Quinto Grado</a>
+                            <a href="https://docs.google.com/forms/d/e/1FAIpQLSeD4ZhSEISeaygdkiQvmNK58sUqWyw1hgOqZQtf-M5ZiAAzdA/viewform" class="btn btn-primary" target="_blank"><i class="fas fa-external-link-alt"></i> Sexto Grado</a>
+                            <a href="https://docs.google.com/forms/d/e/1FAIpQLSdMybiiXgzbCl2Ol66HafbFqZynfZKDlAhwhsygO2YNJKPSfA/viewform" class="btn btn-primary" target="_blank"><i class="fas fa-external-link-alt"></i> Séptimo Grado</a>
                         </div>
                     </div>
                 </div>
@@ -123,19 +161,18 @@
                         <h3>Ingreso Nivel Secundario</h3>
                         <p>Proceso de admisión:</p>
                         <ol>
-                            <li>Completar el formulario de preinscripción vía web.</li>
-                            <li>Participar de una reunión informativa para conocer la propuesta pedagógica y organizativa propia del nivel (se les enviará por mail la fecha para convocarlos a la misma).</li>
-                            <li>Abonar una reserva de vacante (será a cuenta del pago total de la matrícula) *</li>
-                            <li>La familia deberá participar de una entrevista con el equipo directivo y/o de orientación, la cual nos permitirá conocer al joven que inicia este proceso, por lo que será fundamental que puedan comentar cualquier situación particular, ya sea de índole familiar, de salud o terapéutica.</li>
-                            <li>Habrá luego una instancia de encuentro con los y las jóvenes aspirantes al ingreso, con la intención de conocernos y de compartir un momento de trabajo.</li>
-                            <li>Recibirán la respuesta de confirmación o no a la solicitud de vacante.</li>
-                            <li>Una vez confirmada la solicitud de vacante, deberán en el plazo de diez días, abonar la totalidad de la matrícula.</li>
-                            <li>El ingreso y la matriculación serán efectivos habiendo presentado toda la documentación requerida y abonado la matrícula.</li>
+                            <li>Completar el formulario de preinscripción en línea.</li>
+                            <li>Participar en una reunión informativa para conocer la propuesta pedagógica y organizativa del nivel (la fecha será enviada por correo electrónico).</li>
+                            <li>Abonar una reserva de vacante (se descontará del pago total de la matrícula) *</li>
+                            <li>La familia deberá participar en una entrevista con el equipo directivo y/o de orientación para compartir información relevante sobre el joven.</li>
+                            <li>Habrá una instancia de encuentro con los jóvenes aspirantes para conocerse y compartir un momento de trabajo.</li>
+                            <li>Recibirán la confirmación o rechazo de la solicitud de vacante.</li>
+                            <li>Una vez confirmada la solicitud, deberán abonar la totalidad de la matrícula dentro de los 10 días.</li>
                         </ol>
-                        <p>* En caso que al finalizar el proceso de admisión, la respuesta a la solicitud de ingreso sea de aceptación deberán adherir al Proyecto educativo y reglamentos institucionales del Colegio San Miguel y finalizar el pago de la matrícula. En el caso que la respuesta de la institución no sea favorable, se reintegrará el importe abonado al inicio del proceso. En cambio si en esta etapa es la familia quien decide no finalizar el proceso no se efectuará dicho reintegro.</p>
-                        <p>** Se considerará el valor de la matrícula 2024 y en el mes de septiembre abonarán la diferencia en relación a la del 2024.</p>
+                        <p>* En caso de aceptación, deberán adherir al Proyecto educativo y reglamentos institucionales del Colegio San Miguel y completar el pago de la matrícula. Si la respuesta es negativa, se reintegrará el importe abonado al inicio. Si la familia decide no continuar con el proceso, no se efectuará el reintegro.</p>
+                        <p>** La matrícula será la correspondiente al año 2024, y en septiembre deberán abonar la diferencia en relación a la del año 2024.</p>
                         <hr>
-                        <h4>Formulario de preinscripción:</h4>
+                        <h4>Formulario de Preinscripción:</h4>
                         <div class="d-grid gap-2">
                             <a href="https://docs.google.com/forms/d/e/1FAIpQLSfxWOoHVIvoUDPfOqRpAMAK_FxJPnsDNI9tfInxl-0CRzxGeA/viewform" class="btn btn-primary" target="_blank"><i class="fas fa-external-link-alt"></i> Preinscripción Secundaria</a>
                         </div>
@@ -160,8 +197,6 @@
         <p class="mt-3">Hecho con <span style="color: rgb(255, 163, 163); text-shadow: 0 0 2px white;">&#10084;</span> por Alejitao</p>
     </div>
 </footer>
-
-
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>

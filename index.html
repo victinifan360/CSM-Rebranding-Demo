@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,9 +11,80 @@
     <!-- FontAwesome -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <!-- FancyApps Carousel -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/carousel/carousel.css">
     <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/carousel/carousel.umd.js"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/carousel/carousel.css" />
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+        }
+
+        h1, h2 {
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+        }
+
+        h2 {
+            font-size: 2rem;
+        }
+
+        p {
+            margin-bottom: 1rem;
+            font-size: 1.1rem;
+            text-align: justify;
+        }
+
+        ul {
+            padding-left: 1.5rem;
+            list-style-type: disc;
+        }
+
+        li {
+            margin-bottom: 0.5rem;
+        }
+
+        .hero {
+            background: linear-gradient(to right, #0069d9, #004085);
+            color: #fff;
+        }
+
+        .carousel img {
+            border-radius: 0.5rem;
+            width: 100%;
+            max-height: 400px;
+            object-fit: cover;
+        }
+
+        .container img {
+            max-width: 100%;
+            border-radius: 0.5rem;
+        }
+
+        .cta {
+            background: linear-gradient(to right, #004085, #002752);
+        }
+
+        .footer {
+            padding: 2rem 0;
+        }
+
+        .social-icons a {
+            font-size: 1.5rem;
+            margin: 0 1rem;
+            transition: color 0.3s;
+        }
+
+        .social-icons a:hover {
+            color: #17a2b8;
+        }
+
+    </style>
 </head>
+
 <body>
 <!-- Navbar -->
 <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
@@ -28,14 +100,14 @@
                 <li class="nav-item"><a class="nav-link" href="niveles.html">Niveles</a></li>
                 <li class="nav-item"><a class="nav-link" href="inscripciones.html">Inscripciones</a></li>
                 <li class="nav-item"><a class="nav-link" href="pastoral.html">Pastoral</a></li>
-                <li class="nav-item"><a class="nav-link" href="novedades.html">Novedades</a></li>                
+                <li class="nav-item"><a class="nav-link" href="novedades.html">Novedades</a></li>
             </ul>
         </div>
     </div>
 </nav>
 
 <!-- Hero Section -->
-<section class="hero bg-primary text-white text-center py-5">
+<section class="hero text-center py-5">
     <div class="container">
         <h1 class="display-4">Colegio San Miguel</h1>
         <p class="lead">Compromiso con la educación desde 1913</p>
@@ -46,16 +118,12 @@
 <section class="carousel py-5">
     <div class="container">
         <h2 class="text-center mb-4">Bienvenida</h2>
-        <div class="row">
-            <div class="col-12">
-                <div class="f-carousel" id="myCarousel">
-                    <div class="f-carousel__slide">
-                        <img src="IMG/Bienvenida-1.png" alt="Bienvenida 1" class="img-fluid rounded">
-                    </div>
-                    <div class="f-carousel__slide">
-                        <img src="IMG/Bienvenida-2.png" alt="Bienvenida 2" class="img-fluid rounded">
-                    </div>
-                </div>
+        <div id="myCarousel" class="f-carousel">
+            <div class="f-carousel__slide">
+                <img src="IMG/Bienvenida-1.png" alt="Bienvenida 1" class="img-fluid">
+            </div>
+            <div class="f-carousel__slide">
+                <img src="IMG/Bienvenida-2.png" alt="Bienvenida 2" class="img-fluid">
             </div>
         </div>
     </div>
@@ -137,7 +205,7 @@
 </section>
 
 <!-- Call to Action Section -->
-<section class="cta text-center bg-primary text-white py-5">
+<section class="cta text-center text-white py-5">
     <div class="container">
         <h2>Únete a Nuestra Comunidad</h2>
         <p>Forma parte de una institución con más de un siglo de compromiso con la educación y los valores.</p>
@@ -179,6 +247,7 @@ new Carousel(container, options);
 
 </script>
 </body>
+
 </html>
 
 
